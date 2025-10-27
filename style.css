@@ -1,0 +1,104 @@
+.bg-img {
+  display: block;
+  width: 100%;
+  height: 765px;
+  object-fit: contain;
+  position: absolute;
+}
+
+.human_01-img {
+  width: 145px;
+  transition: 0.3s ease;
+  position: absolute;
+  top: 380px;
+  left: 780px;
+  animation: moveLeftRight 8s ease-in-out infinite;
+}
+
+.cloud_01-img {
+  width: 200px;
+  transition: 0.3s ease;
+  position: absolute;
+  top: 510px;
+  left: 500px;
+  animation: cloudMove01 5s ease-in-out infinite;
+}
+
+.cloud_02-img {
+  width: 250px;
+  transition: 0.3s ease;
+  position: absolute;
+  top: 620px;
+  left: 700px;
+  animation: cloudMove02 4s ease-in-out infinite;
+}
+
+.cloud_03-img {
+  width: 120px;
+  transition: 0.3s ease;
+  position: absolute;
+  top: 500px;
+  left: 500px;
+  animation: cloudMove02 7s ease-in-out infinite;
+}
+
+.cloud_04-img {
+  width: 170px;
+  transition: 0.3s ease;
+  position: absolute;
+  top: 450px;
+  left: 600px;
+  animation: cloudMove02 5s ease-in-out infinite;
+}
+
+@keyframes moveLeftRight {
+  0% {
+    left: 450px;
+    top: 450px;
+  }
+  20% {
+    left: 840px;
+    top: 350px;
+  }
+  40% {
+    left: 450px;
+    top: 250px;
+  }
+  60% {
+    left: 840px;
+    top: 150px;
+  }
+  80% {
+    left: 450px;
+    top: 50px;
+  }
+
+  100% {
+    left: 840px;
+    top: -50px;
+  }
+}
+
+@keyframes cloudMove01 {
+  0% {
+    left: 500px;
+  }
+  50% {
+    left: 650px;
+  }
+  100% {
+    left: 500px;
+  }
+}
+
+@keyframes cloudMove02 {
+  0% {
+    left: 450px;
+  }
+  50% {
+    left: 750px;
+  }
+  100% {
+    left: 450px;
+  }
+}
